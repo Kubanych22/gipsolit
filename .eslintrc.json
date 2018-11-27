@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "globals": {
+        "moment": true,
+        "jstz": true
+    },
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": 0,
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": 0,
+        "no-useless-escape": 0,
+        "no-unused-vars":"off",
+        "no-constant-condition":"off",
+        "indent":"off",
+        "no-mixed-spaces-and-tabs": "off"
+    }
+}

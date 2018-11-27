@@ -1,0 +1,158 @@
+.advantages {
+  padding: 50px 20px 35px 20px;
+  background: #ffffff;
+  //color: #1a1820;
+  text-align: center;
+  h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  @import "sliders";
+  & .advantages-wrap {
+    position: relative;
+    height: 180px;
+    margin-bottom: 50px;
+    & div {
+      .arrow-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        .advantages-images {
+          margin: 0 40px;
+          img {
+            max-width: 100%;
+            height: 69px;
+            object-fit: contain;
+          }
+        }
+      }
+      h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4;
+        a {
+          color: #4aa223;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 494px) {
+    padding-top: 70px;
+    .advantages-wrap {
+      margin: 70px 3%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 100%;
+      .services {
+        .arrow-img {
+          label {
+            .arrow {
+              display: none;
+            }
+          }
+          .advantages-images {
+            width: 100%;
+            img {
+              height: 69px;
+              object-fit: contain;
+              max-width: 79px;
+            }
+          }
+        }
+      }
+      .services {
+        width: 100%;
+        max-width: 47%;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 1.6em;
+          font-weight: 300;
+          line-height: 1.4;
+          a {
+            color: #4aa223;
+          }
+        }
+      }
+    }
+    .advantages-wrap > div {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      transition: none;
+    }
+  }
+  
+  @media screen and (min-width: 640px) {
+    .advantages-wrap {
+      height: 100%;
+      .services {
+        max-width: 24%;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        h2 {
+          font-size: 1.6em;
+        }
+        p {
+          font-size: 1.3em;
+        }
+      }
+
+      .pay-upon, .contract {
+        h2 {
+          margin-bottom: 30px;
+        }
+      }
+      .right-on-time {
+        p {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 667px) {
+    .advantages-wrap {
+      .services {
+        width: 100%;
+      }
+      .pay-upon, .right-on-time {
+        p {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 744px) {
+    .advantages-wrap {
+      .contract {
+        p {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 961px) {
+    .advantages-wrap {
+      .save-on-materials {
+        p {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+}

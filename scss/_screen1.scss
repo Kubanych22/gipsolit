@@ -1,0 +1,203 @@
+#screen1 {
+  color: $colors-screen1;
+  header {
+    display: flex;
+    flex-flow: wrap column;
+    #logo {
+      order: 1;
+      text-align: center;
+      padding: 20px 0;
+      img {
+        max-width: 100%;
+      }
+    }
+    #shapka {
+      padding: 10px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      #phone {
+        font-size: 1.4em;
+        font-weight: 700;
+        padding: 10px;
+      }
+      #consultation {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #ffffff;
+        background: #ffb000;
+        border-radius: 5px;
+        padding: 10px 15px 0 15px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .screen1-main {
+    display: flex;
+    flex-direction: column;
+    .screen1-left {
+      text-align: center;
+      #left-h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      #left-p1 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+      }
+      #left-p2 {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.6em;
+        color: #ffffff;
+        font-weight: bold;
+        background: #1ed334;
+        padding: 20px 25px;
+        margin-bottom: 20px;
+        span {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+      #left-h2 {
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+    .form-wrapper {
+      .screen1-form {
+        margin: 10px;
+        background: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        form p {
+          margin-bottom: 20px;
+          font-size: 1.7em;
+          span {
+            font-weight: bold;
+          }
+        }
+        form fieldset {
+          margin: 0 auto;
+          width: 65%;
+          padding: 5px;
+          margin-bottom: 20px;
+          border: 1px solid #dddddd;
+          border-radius: 5px;
+          font-size: 1.3em;
+          color: #565656;
+          legend {
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+          input {
+            border: 0;
+          }
+          input:active, input:focus, input:hover {
+            outline: 0;
+          }
+        }
+        #submit {
+          background: #f4ba00;
+          border: 0;
+          border-radius: 10px;
+          padding: 15px 35px;
+          color: #ffffff;
+          font-size: 1.5em;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        #submit:hover {
+          background: #df9d01;
+          transition-property: background-color;
+          transition-duration: .5s;
+        }
+        .postscriptum {
+          font-size: 1.1em;
+          padding-bottom: 7px;
+        }
+      }
+    }
+    .ps {
+      text-align: center;
+      font-size: 1.1em;
+    }
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 494px) {
+    header {
+      padding-bottom: 20px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      #logo {
+        order: 0;
+        background: none;
+      }
+      #shapka {
+        background: none;
+      }
+    }
+    .screen1-main {
+      flex-direction: row;
+      justify-content: space-around;
+      .screen1-left {
+        margin-top: 10px;
+        text-align: center;
+        #left-h1 {
+          font-size: 2.5em;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        #left-p1 {
+          font-size: 1.7em;
+          margin-bottom: 20px;
+        }
+        #left-p2 {
+          width: 70%;
+          margin: 0 auto;
+          font-size: 1.6em;
+          color: #ffffff;
+          font-weight: bold;
+          background: #1ed334;
+          padding: 20px 25px;
+          margin-bottom: 20px;
+          span {
+            display: block;
+            margin-top: 10px;
+          }
+        }
+        #left-h2 {
+          font-size: 1.5em;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+      }
+      .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        .screen1-form, .screen1-left {
+          flex: 0 1 auto;
+        }
+        .screen1-form {
+          form p {
+            font-size: 1.4em;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 640px) {
+    background: url(../images/first-screen-bg.png) 20px 50px no-repeat;
+    background-size: 100% 100%;
+  }
+}
+

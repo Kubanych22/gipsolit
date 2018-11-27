@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  
+  <!--build:css css/styles.min.css-->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <!--endbuild-->
+  
+</head>
+<body>
+<div class="wrapper">
+  <div id="screen1">
+    <header>
+      <p id="logo">
+        <img src="images/logo.png" alt="Гипсолит">
+      </p>
+      <div id="shapka">
+        <p id="phone">+7 &nbsp;495 &nbsp;771 &nbsp;05 &nbsp;08</p>
+        <p id="consultation">Консультация</p></div>
+    </header>
+    <div class="screen1-main">
+      <div class="screen1-left">
+        <h1 id="left-h1">Автоматизированная <br> штукатурка стен</h1>
+        <p id="left-p1">Идеально ровные стены <br> в кратчайшие сроки</p>
+        <p id="left-p2">Стоимость работ <span>от 300 руб/м2</span></p>
+        <h2 id="left-h2">Оплата по факту!</h2>
+      </div>
+      <div class="form-wrapper">
+        <div class="screen1-form">
+          <form action="#">
+            <p>
+              Для расчета точной стоимости<br>
+              закажите <span>выезд замерщика</span>
+            </p>
+            <fieldset>
+              <legend>Ваше имя</legend>
+              <input type="text" id="name">
+            </fieldset>
+            <fieldset>
+              <legend>Номер телефона</legend>
+              <input type="text" id="user-phone">
+            </fieldset>
+            <input type="submit" id="submit" value="Оставьте заявку">
+            <p class="postscriptum">Приедем в день обращения*</p>
+          </form>
+        </div>
+        <p class="ps">* - выезды на замер осуществляются<br>в рабочие дни Пн-Пт с 9:00 до 18:00</p>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="advantages">
+      <h1>Преимущества работы с нами</h1>
+      <div class='advantages-wrap'>
+        <input type="radio" name="slider" id="slider1" checked="checked">
+        <div class="pay-upon services">
+          <div class="arrow-img">
+            <label for="slider4">
+              <img class="arrow" src="images/left-arrow.png" alt="">
+            </label>
+            <p class="advantages-images">
+              <img src="images/coin.png" alt="Платите по факту">
+            </p>
+            <label for="slider2">
+              <img class="arrow" src="images/right-arrow.png" alt="">
+            </label>
+          </div>
+          <h2>Платите по факту</h2>
+          <p>
+            Вы оплачиваете выполненные  работы только после их выполнения.
+            Никаких скрытых доплат и промежуточных платежей
+          </p>
+        </div>
+  
+        <input type="radio" name="slider" id="slider2">
+        <div class="contract services">
+          <div class="arrow-img">
+            <label for="slider1">
+              <img class="arrow" src="images/left-arrow.png" alt="">
+            </label>
+            <p class="advantages-images">
+              <img src="images/open-folder.png" alt="Заключаем договор">
+            </p>
+            <label for="slider3">
+              <img class="arrow" src="images/right-arrow.png" alt="">
+            </label>
+          </div>
+          <h2>Заключаем договор</h2>
+          <p>
+            Перед началом работ заключаем договор на юридическое лицо.  Вы можете быть уверены, что все обязательства будут выполнены.
+          </p>
+        </div>
+  
+        <input type="radio" name="slider" id="slider3">
+        <div class="right-on-time services">
+          <div class="arrow-img">
+            <label for="slider2">
+              <img class="arrow" src="images/left-arrow.png" alt="">
+            </label>
+            <p class="advantages-images">
+              <img src="images/clock.png" alt="Точно в срок">
+            </p>
+            <label for="slider4">
+              <img class="arrow" src="images/right-arrow.png" alt="">
+            </label>
+          </div>
+          <h2>Точно в срок</h2>
+          <p>
+            Работаем строго по установленным срокам, которые прописаны  в договоре. Если не успеваем, Вы платите меньше.
+          </p>
+        </div>
+    
+        <input type="radio" name="slider" id="slider4">
+        <div class="save-on-materials services">
+          <div class="arrow-img">
+            <label for="slider3">
+              <img class="arrow" src="images/left-arrow.png" alt="">
+            </label>
+            <p class="advantages-images">
+              <img src="images/piggy-bank.png" alt="Экономите на материалах">
+            </p>
+            <label for="slider1">
+              <img class="arrow" src="images/right-arrow.png" alt="">
+            </label>
+          </div>
+          <h2>Экономите на материалах</h2>
+          <p>
+            Мы являемся структурным подразделением компании поставщика строительных смесей <a href="#">gicema.ru</a>  и  даем Вам самые выгодные цены.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="prices">
+      <h2>Цены</h2>
+      <p>Выберите вариант, который подходит Вам:</p>
+      <div class="plaster-wrap">
+        <div class="plaster">
+          <div>
+            <h3>Штукатурка вашим материалом</h3>
+            <p>
+              <img src="images/photo-material.jpg" alt="">
+            </p>
+            <p class="price">от <span>300</span> руб/м2</p>
+            <p class="what-cost">Что входит в стоимость?</p>
+            <div class="included-in-price">
+              <p>
+                <img src="images/checked.png" alt="">
+                Проведение работ
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Уборка
+              </p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <button class="order">Заказать</button>
+        </div>
+        <div class="plaster surface">
+          <div>
+            <h3>Штукатурка под шпаклёвку</h3>
+            <p>
+              <img src="images/photo-surface.jpg" alt="">
+            </p>
+            <p class="price">от <span>530</span> руб/м2</p>
+            <p class="what-cost">Что входит в стоимость?</p>
+            <div class="included-in-price">
+              <p>
+                <img src="images/checked.png" alt="">
+                Завоз материала и его подъем
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Проведение работ
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Уборка
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Гарантия 2 года
+              </p>
+            </div>
+          </div>
+          <button class="order">Заказать</button>
+        </div>
+        <div class="plaster wallpaper">
+          <div>
+            <h3>Штукатурка под обои</h3>
+            <p>
+              <img src="images/photo-wallpaper.jpg" alt="">
+            </p>
+            <p class="price">от <span>560</span> руб/м2</p>
+            <p class="what-cost">Что входит в стоимость?</p>
+            <div class="included-in-price">
+              <p>
+                <img src="images/checked.png" alt="">
+                Завоз материала и его подъем
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Проведение работ
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Уборка
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Гарантия 2 года
+              </p>
+              <p>
+                <img src="images/checked.png" alt="">
+                Можно сразу клеить обои
+              </p>
+            </div>
+          </div>
+          <button class="order">Заказать</button>
+        </div>
+      </div>
+      <button class="calculate-exact-cost">Рассчитать точную стоимость</button>
+    </div>
+    <div class="comments">
+      <h1>Отзывы</h1>
+      <div class='comments-wrap'> <!--Внешний слайдер-->
+        <input type="radio" name="slides" id="point1" checked>
+        <input type="radio" name="slides" id="point2">
+        <input type="radio" name="slides" id="point3">
+        <div class="slider">
+          <div class="slides video-slider-wrap1">
+            <label for="point3">
+              <img class="arrow left" src="images/external-left-arrow.png" alt="">
+            </label>
+            <div class="video-customer-wrap">
+              <div class="video-slider">
+                <div class="video">
+                  <video src="video/sample1.mp4" controls poster="images/video-photo.jpg">
+                  </video>
+                </div>
+                <!--Внутренний слайдер для первого внешнего слайда-->
+                <div class='comments-slider'>
+                  <!--Первый слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide1" id="comments-slide1_1" checked>
+                  <div class="gallery1">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide1_2">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider2-photo1.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo2.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo3.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide1_2">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                  <!--Второй слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide1" id="comments-slide1_2">
+                  <div class="gallery2">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide1_1">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider2-photo4.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo5.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo6.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide2_1">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-customer">
+                <p>Объект: г. Москва, Нахимовский проспект д.10</p>
+                <p>Площадь: <span>357 м2</span></p>
+                <p>Выполнен: <span>за 10 дней</span></p>
+                <p class="object-customer-cost">Стоимость: <span>550 рублей за квадратный метр</span></p>
+                <p>Особенности: <span>перепады неровности стен достигали до 6 см</span></p>
+                <div class="customer-wrap">
+                  <div>
+                    <img src="images/customer-photo1.jpg" alt="">
+                  </div>
+                  <div class="customer">
+                    <p>Заказчик</p>
+                    <p class="customer-name">Нахимов Артем</p>
+                  </div>
+                </div>
+                <div class="customer-feedback">
+                  <img src="images/customer-feedback.png" alt="">
+                  <p class="customer-feedback-text">
+ Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в домах.
+                  </p>
+                </div>
+              </div>
+              <label for="point2">
+                <img class="arrow right" src="images/external-right-arrow.png" alt="">
+              </label>
+            </div>
+            
+          </div>
+          <div class="slides video-slider-wrap2">
+            <label for="point1">
+              <img class="arrow left" src="images/external-left-arrow.png" alt="">
+            </label>
+            <div class="video-customer-wrap">
+              <div class="video-slider">
+                <div class="video">
+                  <video src="video/sample2.mp4" controls poster="images/comments-slider2-photo2.jpg">
+                  </video>
+                </div>
+                <!--Внутренний слайдер для второго внешнего слайда-->
+                <div class='comments-slider'>
+                  <!--Первый слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide2" id="comments-slide2_1" checked>
+                  <div class="gallery1">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide2_2">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider2-photo1.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo2.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo3.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide2_2">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                  <!--Второй слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide2" id="comments-slide2_2">
+                  <div class="gallery2">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide2_1">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider2-photo4.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo5.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo6.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide2_1">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-customer">
+              <p>Объект: г. Москва, Кутузовский проспект д.342</p>
+              <p>Площадь: <span>500 м2</span></p>
+              <p>Выполнен: <span>за 13 дней</span></p>
+              <p class="object-customer-cost">Стоимость: <span>650 рублей за квадратный метр</span></p>
+              <p>Особенности: <span>перепады неровности стен достигали до 8 см</span></p>
+              <div class="customer-wrap">
+                <div>
+                  <img src="images/customer-photo2.jpg" alt="">
+                </div>
+                <div class="customer">
+                  <p>Заказчик</p>
+                  <p class="customer-name">Элизабет Тейлор</p>
+                </div>
+              </div>
+              <div class="customer-feedback">
+                <img src="images/customer-feedback.png" alt="">
+                <p class="customer-feedback-text">
+                  Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я  наслаждаюсь от всего сердца.
+                </p>
+              </div>
+            </div>
+              <label for="point3">
+                <img class="arrow right" src="images/external-right-arrow.png" alt="">
+              </label>
+            </div>
+          </div>
+          <div class="slides video-slider-wrap3">
+            <label for="point2">
+              <img class="arrow left" src="images/external-left-arrow.png" alt="">
+            </label>
+            <div class="video-customer-wrap">
+              <div class="video-slider">
+                <div class="video">
+                  <video src="video/sample3.mp4" controls poster="images/comments-slider2-photo6.jpg">
+                  </video>
+                </div>
+                <!--Внутренний слайдер для третьего внешнего слайда-->
+                <div class='comments-slider'>
+                  <!--Первый слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide3" id="comments-slide3_1" checked>
+                  <div class="gallery1">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide3_2">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider-photo2.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider2-photo4.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider-photo3.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide3_2">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                  <!--Второй слайд внутреннего слайдера-->
+                  <input type="radio" name="innerslide3" id="comments-slide3_2">
+                  <div class="gallery2">
+                    <div class="comments-arrow-img">
+                      <label for="comments-slide3_1">
+                        <img class="inner-arrow" src="images/left-arrow.png" alt="">
+                      </label>
+                      <div class="gallery-images">
+                        <div>
+                          <img src="images/comments-slider2-photo6.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider-photo5.jpg" alt="">
+                        </div>
+                        <div>
+                          <img src="images/comments-slider-photo6.jpg" alt="">
+                        </div>
+                      </div>
+                      <label for="comments-slide3_1">
+                        <img class="inner-arrow" src="images/right-arrow.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-customer">
+                <p>Объект: г. Москва, Ленинградское шоссе д.127</p>
+                <p>Площадь: <span>790 м2</span></p>
+                <p>Выполнен: <span>за 20 дней</span></p>
+                <p class="object-customer-cost">Стоимость: <span>700 рублей за квадратный метр</span></p>
+                <p>Особенности: <span>перепады неровности стен достигали до 4 см</span></p>
+                <div class="customer-wrap">
+                  <div>
+                    <img src="images/customer-photo3.jpg" alt="">
+                  </div>
+                  <div class="customer">
+                    <p>Заказчик</p>
+                    <p class="customer-name">Брэт Пит</p>
+                  </div>
+                </div>
+                <div class="customer-feedback">
+                  <img src="images/customer-feedback.png" alt="">
+                  <p class="customer-feedback-text">
+                    Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч. Шеф взъярён тчк щипцы с эхом гудбай Жюль. Эй,
+                    жлоб! Прячь юных съёмщиц.
+                  </p>
+                </div>
+              </div>
+              <label for="point1">
+                <img class="arrow right" src="images/external-right-arrow.png" alt="">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <label for="point1"></label>
+          <label for="point2"></label>
+          <label for="point3"></label>
+        </div>
+      </div>
+      <div class="customer-order-wrap">
+        <div class="hand">
+          <img src="/images/hand.jpg" alt="" class="hand-img">
+        </div>
+        <div class="customer-order">
+          <h2>Хотите также? Оставьте Ваши контактные данные</h2>
+          <form action="#" class="request">
+            <div class="form-wrap">
+              <fieldset>
+                <legend>Ваше имя</legend>
+                <input type="text" id="customer-name">
+              </fieldset>
+              <fieldset>
+                <legend>Номер телефона</legend>
+                <input type="text" id="customer-phone">
+              </fieldset>
+            </div>
+            <input type="submit" id="customer-submit" value="Оставьте заявку">
+          </form>
+        </div>
+      </div>
+      <p class="call-soon">Перезвоним в ближайшее время</p>
+    </div>
+    <article class="scheme-of-work">
+      <div class="scheme-of-work-main">
+        <h2>Схема работы</h2>
+        <p>Работа над вашим объектом будет  включать в себя следующие этапы:</p>
+        <div class="scheme-of-work-step-wrapper">
+          <section class="scheme-of-work-step">
+            <div class="scheme-of-work-image">
+              <img src="images/e-learning.png" id="e-learning" alt="">
+            </div>
+            <h3 class="scheme-of-work-headline">Заявка</h3>
+            <p class="scheme-of-work-text" id="work-text-1">Оставляете онлайн заявку или  звоните +7 495 771 05 08</p>
+          </section>
+          <section class="scheme-of-work-step">
+            <div class="scheme-of-work-image">
+              <img src="images/technology-0002-2.png" alt="">
+            </div>
+            <h3 class="scheme-of-work-headline">Выезд специалиста</h3>
+            <p class="scheme-of-work-text" id="work-text-2">В течение 1 рабочего дня к Вам приезжает специалист,
+            который выполнит замеры
+            для
+            точной
+            стоимости работ</p>
+          </section>
+          <section class="scheme-of-work-step">
+            <div class="scheme-of-work-image">
+              <img src="images/form.png" alt="">
+            </div>
+            <h3 class="scheme-of-work-headline">Составление договора</h3>
+            <p class="scheme-of-work-text" id="work-text-3">Готовим договор и согласовываем с Вами</p>
+          </section>
+          <section class="scheme-of-work-step" id="work-step-start">
+            <div class="scheme-of-work-image">
+              <img src="images/tool-box.png" alt="">
+            </div>
+            <h3 class="scheme-of-work-headline">Начало работ</h3>
+            <p class="scheme-of-work-text" id="work-text-4">Доставляем материалы, оборудование, подписываем договор и
+            начинаем
+            работы</p>
+          </section>
+          <section class="scheme-of-work-step" id="work-step-end">
+            <div class="scheme-of-work-image">
+              <img src="images/Money-Calculator-icon.png" alt="">
+            </div>
+            <h3 class="scheme-of-work-headline">Завершение работ </h3>
+            <p class="scheme-of-work-text" id="work-text-5">После окончания работ Вы проверяете качество и
+            подписываете акт сдачи,
+            производите оплату</p>
+          </section>
+        </div>
+      </div>
+      <div class="scheme-of-work-shpatel-image">
+        <img src="images/shpatel.png" id="sloy-img" alt="">
+      </div>
+    </article>
+  </div>
+  <footer>footer</footer>
+</div>
+
+<!--build:js js/main.min.js -->
+ <script src="js/libs/a-library.js"></script>
+ <script src="js/libs/another-library.js"></script>
+ <script src="js/transpiled/main.js"></script>
+ <!-- endbuild -->
+</body>
+</html>

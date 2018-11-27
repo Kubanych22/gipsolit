@@ -1,0 +1,53 @@
+.comments-wrap > input {
+  display: none;
+}
+.comments-wrap > label {
+  display: none;
+}
+.slider {
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+}
+
+.slides {
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.comments-wrap .control label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: #c6c8c5;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  margin-right: 4px;
+  top: 100%;
+  left: 40%;
+  transition: background 0.8s ease-out 0s;
+  //outline: 1px solid red;
+}
+
+.comments-wrap .control label:after {
+  background: rgba(250, 250, 250, 0.8);
+}
+
+#point1:checked ~ .control label:nth-of-type(1),
+#point2:checked ~ .control label:nth-of-type(2),
+#point3:checked ~ .control label:nth-of-type(3) {
+  background: #547f27;
+}
+
+#point1:checked ~ .slider > .video-slider-wrap1,
+#point2:checked ~ .slider > .video-slider-wrap2,
+#point3:checked ~ .slider > .video-slider-wrap3 {
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}

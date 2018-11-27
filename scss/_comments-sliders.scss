@@ -1,0 +1,37 @@
+.comments-slider > input {
+  display: none;
+}
+
+.comments-slider > label {
+  display: none;
+}
+
+.comments-slider > input:checked + div + label,
+.comments-slider > input:checked + div + label + label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+.comments-slider > input:checked + div + label:after,
+.comments-slider > input:checked + div + label + label:after {
+  color: #fff;
+  display: block;
+}
+
+.comments-slider > div {
+  position: absolute;
+}
+
+.comments-slider > div {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.comments-slider > input:checked + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
