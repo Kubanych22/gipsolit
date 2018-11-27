@@ -9,7 +9,11 @@ node_modules/
 
 # Temporary files
 *.tmp
+*.temp
 
 # ES5 generated code
 dist/
+public/
 public/dist/
+
+
