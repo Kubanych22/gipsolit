@@ -1158,21 +1158,57 @@ body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
   }
 }
 
-body .wrapper .main .all-included-wrap {
+body .wrapper .main .all-inclusive-wrap {
   background: url(../images/all-included-bg.png) 0 0 no-repeat;
   background-size: cover;
   padding: 50px 20px 35px 20px;
   text-align: center;
 }
 
-body .wrapper .main .all-included-wrap .all-included {
-  display: flex;
-  flex-wrap: wrap;
+body .wrapper .main .all-inclusive-wrap h2 {
+  font-size: 2.4em;
+  color: #008100;
+  margin-bottom: 25px;
 }
 
-body .wrapper .main .all-included-wrap .all-included .include {
+body .wrapper .main .all-inclusive-wrap .our-material-cost {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap {
   display: flex;
-  outline: 1px solid red;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .include-image img {
+  max-width: 100%;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
+  margin-left: 15px;
+  text-align: left;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text span {
+  position: relative;
+  top: 2px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclusive-text {
+  margin-top: 10px;
 }
 
 body footer {
@@ -1182,21 +1218,57 @@ body footer {
   font-size: 1.4em;
 }
 
-.all-included-wrap {
+.all-inclusive-wrap {
   background: url(../images/all-included-bg.png) 0 0 no-repeat;
   background-size: cover;
   padding: 50px 20px 35px 20px;
   text-align: center;
 }
 
-.all-included-wrap .all-included {
-  display: flex;
-  flex-wrap: wrap;
+.all-inclusive-wrap h2 {
+  font-size: 2.4em;
+  color: #008100;
+  margin-bottom: 25px;
 }
 
-.all-included-wrap .all-included .include {
+.all-inclusive-wrap .our-material-cost {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.all-inclusive-wrap .inclusive-wrap {
   display: flex;
-  outline: 1px solid red;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.all-inclusive-wrap .inclusive-wrap .inclusive {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.all-inclusive-wrap .inclusive-wrap .inclusive .include-image img {
+  max-width: 100%;
+}
+
+.all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
+  margin-left: 15px;
+  text-align: left;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+}
+
+.all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text span {
+  position: relative;
+  top: 2px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.all-inclusive-wrap .inclusive-wrap .inclusive #first-inclusive-text {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
