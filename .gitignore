@@ -13,7 +13,3 @@ node_modules/
 
 # ES5 generated code
 dist/
-public/
-public/dist/
-
-

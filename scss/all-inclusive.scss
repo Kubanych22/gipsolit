@@ -18,6 +18,8 @@
     justify-content: flex-start;
     .inclusive {
       margin-bottom: 25px;
+      width: 100%;
+      max-width: 100%;
       display: flex;
       align-items: center;
       .include-image {
@@ -43,5 +45,20 @@
       }
     }
   }
-  
+  @media screen and (min-width: 494px) {
+    .inclusive-wrap {
+      justify-content: space-between;
+      .inclusive {
+        width: 45%;
+      }
+    }
+  }
+  @media screen and (min-width: 761px) {
+    .inclusive-wrap {
+      .inclusive {
+        width: 25%;
+        max-width: 25%;
+      }
+    }
+  }
 }
