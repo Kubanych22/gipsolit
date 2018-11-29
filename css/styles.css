@@ -1240,28 +1240,38 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
   }
 }
 
+body .wrapper .main .dispel-all-fears h2 {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile h3 {
+  font-size: 1.8em;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile p {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile {
+    display: none;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
+    display: block;
+  }
+}
+
 body footer {
   flex: 1 0 auto;
   background: #403980;
   padding: 5px;
   font-size: 1.4em;
-}
-
-.all-included-wrap {
-  background: url(../images/all-included-bg.png) 0 0 no-repeat;
-  background-size: cover;
-  padding: 50px 20px 35px 20px;
-  text-align: center;
-}
-
-.all-included-wrap .all-included {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.all-included-wrap .all-included .include {
-  display: flex;
-  outline: 1px solid red;
 }
 
 .all-inclusive-wrap {

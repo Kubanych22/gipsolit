@@ -1,0 +1,27 @@
+.dispel-all-fears {
+  h2 {
+    font-size: 2.4em;
+    font-weight: bold;
+  }
+  .dispel-all-fears-mobile {
+    h3 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.3em;
+      font-weight: normal;
+    }
+  }
+  
+  .dispel-all-fears-desktop {
+    display: none;
+  }
+  @media screen and (min-width: 640px) {
+    .dispel-all-fears-mobile {
+      display: none;
+    }
+    .dispel-all-fears-desktop {
+      display: block;
+    }
+  }
+}
