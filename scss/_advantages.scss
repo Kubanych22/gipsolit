@@ -43,7 +43,7 @@
       }
     }
   }
-  @media screen and (min-width: 494px) {
+  @media screen and (min-width: 480px) {
     padding-top: 70px;
     .advantages-wrap {
       margin: 70px 3%;
@@ -85,6 +85,9 @@
             color: #4aa223;
           }
         }
+      }
+      .pay-upon h2, .right-on-time h2 {
+        margin-bottom: 50px;
       }
     }
     .advantages-wrap > div {

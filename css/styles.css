@@ -344,7 +344,7 @@ body .wrapper .main .advantages .advantages-wrap div p a {
   color: #4aa223;
 }
 
-@media screen and (min-width: 494px) {
+@media screen and (min-width: 480px) {
   body .wrapper .main .advantages {
     padding-top: 70px;
   }
@@ -384,6 +384,9 @@ body .wrapper .main .advantages .advantages-wrap div p a {
   }
   body .wrapper .main .advantages .advantages-wrap .services p a {
     color: #4aa223;
+  }
+  body .wrapper .main .advantages .advantages-wrap .pay-upon h2, body .wrapper .main .advantages .advantages-wrap .right-on-time h2 {
+    margin-bottom: 50px;
   }
   body .wrapper .main .advantages .advantages-wrap > div {
     position: static;
@@ -1058,7 +1061,7 @@ body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
   display: none;
 }
 
-@media screen and (min-width: 494px) {
+@media screen and (min-width: 480px) {
   body .wrapper .main .scheme-of-work {
     padding-top: 50px;
     text-align: center;
@@ -1082,13 +1085,13 @@ body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
   }
 }
 
-@media screen and (min-width: 494px) and (min-width: 535px) {
+@media screen and (min-width: 480px) and (min-width: 535px) {
   body .wrapper .main .scheme-of-work .scheme-of-work-main .scheme-of-work-step-wrapper .scheme-of-work-step #work-text-2 {
     padding-top: 20px;
   }
 }
 
-@media screen and (min-width: 494px) and (min-width: 610px) {
+@media screen and (min-width: 480px) and (min-width: 610px) {
   body .wrapper .main .scheme-of-work .scheme-of-work-main .scheme-of-work-step-wrapper .scheme-of-work-step #work-text-3, body .wrapper .main .scheme-of-work .scheme-of-work-main .scheme-of-work-step-wrapper .scheme-of-work-step #work-text-5 {
     padding-top: 20px;
   }
@@ -1140,6 +1143,10 @@ body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
 @media screen and (min-width: 1152px) {
   body .wrapper .main .scheme-of-work .scheme-of-work-step {
     max-width: 450px;
+  }
+  body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
+    top: 20%;
+    left: 65%;
   }
 }
 
@@ -1207,7 +1214,7 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
   margin-top: 10px;
 }
 
-@media screen and (min-width: 494px) {
+@media screen and (min-width: 480px) {
   body .wrapper .main .all-inclusive-wrap .inclusive-wrap {
     justify-content: space-between;
   }
@@ -1216,10 +1223,20 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
   }
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 800px) {
   body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive {
     width: 25%;
     max-width: 25%;
+    align-items: flex-start;
+  }
+  body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
+    margin: 0 10px;
+  }
+  body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text span {
+    position: static;
+  }
+  body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclusive-text {
+    margin-top: 0;
   }
 }
 
@@ -1228,6 +1245,23 @@ body footer {
   background: #403980;
   padding: 5px;
   font-size: 1.4em;
+}
+
+.all-included-wrap {
+  background: url(../images/all-included-bg.png) 0 0 no-repeat;
+  background-size: cover;
+  padding: 50px 20px 35px 20px;
+  text-align: center;
+}
+
+.all-included-wrap .all-included {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-included-wrap .all-included .include {
+  display: flex;
+  outline: 1px solid red;
 }
 
 .all-inclusive-wrap {
@@ -1285,7 +1319,7 @@ body footer {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 494px) {
+@media screen and (min-width: 480px) {
   .all-inclusive-wrap .inclusive-wrap {
     justify-content: space-between;
   }
@@ -1294,10 +1328,20 @@ body footer {
   }
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 800px) {
   .all-inclusive-wrap .inclusive-wrap .inclusive {
     width: 25%;
     max-width: 25%;
+    align-items: flex-start;
+  }
+  .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
+    margin: 0 10px;
+  }
+  .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text span {
+    position: static;
+  }
+  .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclusive-text {
+    margin-top: 0;
   }
 }
 

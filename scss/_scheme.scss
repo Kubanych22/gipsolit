@@ -1,7 +1,6 @@
 .scheme-of-work {
   background: #ffffff;
   padding: 20px 20px 35px 20px;
-  //margin-bottom: 50px;
   text-align: center;
   .scheme-of-work-main {
     h2 {
@@ -44,7 +43,7 @@
   .scheme-of-work-shpatel-image {
     display: none;
   }
-  @media screen and (min-width: 494px) {
+  @media screen and (min-width: 480px) {
     padding-top: 50px;
     text-align: center;
     .scheme-of-work-main {
@@ -127,8 +126,8 @@
       max-width: 450px;
     }
     .scheme-of-work-shpatel-image {
-      //height: 120%;
-      //top: 20%;
+      top: 20%;
+      left: 65%;
     }
   }
   @media screen and (min-width: 1400px) {
@@ -140,8 +139,6 @@
       }
   }
     .scheme-of-work-shpatel-image {
-      //height: 100%;
-      //top: 15%;
       left: 70%;
     }
   }
