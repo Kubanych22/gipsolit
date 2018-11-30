@@ -1162,7 +1162,7 @@ body .wrapper .main .scheme-of-work .scheme-of-work-shpatel-image {
 body .wrapper .main .all-inclusive-wrap {
   background: url(../images/all-included-bg.png) 0 0 no-repeat;
   background-size: cover;
-  padding: 50px 20px 35px 20px;
+  padding: 50px 10px 35px 10px;
   text-align: center;
 }
 
@@ -1240,17 +1240,43 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
   }
 }
 
+body .wrapper .main .dispel-all-fears {
+  background: #ffffff;
+  padding: 50px 10px 35px 10px;
+  text-align: center;
+}
+
 body .wrapper .main .dispel-all-fears h2 {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile h3 {
   font-size: 1.8em;
+  margin-bottom: 30px;
 }
 
 body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile p {
   font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile .solution-mobile {
+  margin: 20px 5%;
+  color: #009300;
+  text-align: left;
+  border: 3px solid #009300;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile .solution-mobile p:nth-of-type(1) {
+  margin: 10px;
+  font-weight: bold;
+}
+
+body .wrapper .main .dispel-all-fears .dispel-all-fears-mobile .solution-mobile p:nth-of-type(2) {
+  margin: 10px;
   font-weight: normal;
 }
 
@@ -1263,7 +1289,39 @@ body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
     display: none;
   }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
-    display: block;
+    background: url(../images/girl-builder.png) center 0 no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem {
+    flex: 0 0 50%;
+    outline: 1px solid green;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem h3 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem .problems {
+    display: flex;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem .problems img {
+    max-width: 100%;
+    margin-left: 20%;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution {
+    flex: 0 0 50%;
+    outline: 1px solid red;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution h3 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution .solution-desktop {
+    display: flex;
+  }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution .solution-desktop img {
+    max-width: 100%;
   }
 }
 
@@ -1277,7 +1335,7 @@ body footer {
 .all-inclusive-wrap {
   background: url(../images/all-included-bg.png) 0 0 no-repeat;
   background-size: cover;
-  padding: 50px 20px 35px 20px;
+  padding: 50px 10px 35px 10px;
   text-align: center;
 }
 
