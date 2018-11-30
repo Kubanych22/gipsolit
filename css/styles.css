@@ -1289,13 +1289,11 @@ body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
     display: none;
   }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
-    background: url(../images/girl-builder.png) center 0 no-repeat;
-    background-size: contain;
     display: flex;
     justify-content: center;
   }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
     outline: 1px solid green;
   }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .what-problem h3 {
@@ -1309,8 +1307,11 @@ body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
     max-width: 100%;
     margin-left: 20%;
   }
+  body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .girl-builder img {
+    max-width: 100%;
+  }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution {
-    flex: 0 0 50%;
+    flex: 0 0 35%;
     outline: 1px solid red;
   }
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution h3 {

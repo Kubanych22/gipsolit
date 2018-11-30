@@ -42,12 +42,12 @@
       display: none;
     }
     .dispel-all-fears-desktop {
-      background: url(../images/girl-builder.png) center 0 no-repeat;
-      background-size: contain;
+      //background: url(../images/girl-builder.png) center 0 no-repeat;
+      //background-size: contain;
       display: flex;
       justify-content: center;
       .what-problem {
-        flex: 0 0 50%;
+        flex: 0 0 40%;
         //width: 35%;
         outline: 1px solid green;
         h3 {
@@ -62,14 +62,14 @@
           }
         }
       }
-      //.girl-builder {
-      //  img {
-      //    max-width: 100%;
-      //  }
-      //}
+      .girl-builder {
+        img {
+          max-width: 100%;
+        }
+      }
       .our-solution {
         //width: 35%;
-        flex: 0 0 50%;
+        flex: 0 0 35%;
         outline: 1px solid red;
         h3 {
           font-size: 1.8em;
