@@ -1242,7 +1242,7 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
 
 body .wrapper .main .dispel-all-fears {
   background: #ffffff;
-  padding: 50px 10px 35px 10px;
+  padding: 50px 10px 10px 10px;
   text-align: center;
 }
 
@@ -1526,6 +1526,109 @@ body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
   body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop .our-solution .solution-desktop .checked-symbol-image {
     margin-left: 10px;
   }
+}
+
+body .wrapper .main .materials {
+  background: url(../images/materials-bg.png) 0 0 no-repeat;
+  background-size: cover;
+  padding: 20px 20px 35px 20px;
+  text-align: center;
+  color: #000;
+}
+
+body .wrapper .main .materials h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+body .wrapper .main .materials p {
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > input {
+  display: none;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > label {
+  display: none;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > input:checked + div + label,
+body .wrapper .main .materials .materials-slider-wrap > input:checked + div + label + label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > input:checked + div + label:after,
+body .wrapper .main .materials .materials-slider-wrap > input:checked + div + label + label:after {
+  color: #fff;
+  display: block;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > div {
+  position: absolute;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > div {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+body .wrapper .main .materials .materials-slider-wrap > input:checked + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+body .wrapper .main .materials .materials-slider-wrap {
+  position: relative;
+  height: 280px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div .arrow-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div .arrow-img .material-images {
+  width: 165px;
+  height: 165px;
+  margin: 0 45px 0 50px;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div .arrow-img .material-images img {
+  max-width: 100%;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div p {
+  font-size: 1.9em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div p span {
+  font-weight: bold;
+}
+
+body .wrapper .main .materials .materials-slider-wrap div .sertificate {
+  color: #45a34c;
+  font-size: 1.6em;
 }
 
 body footer {

@@ -1,0 +1,37 @@
+.materials-slider-wrap > input {
+  display: none;
+}
+
+.materials-slider-wrap > label {
+  display: none;
+}
+
+.materials-slider-wrap > input:checked + div + label,
+.materials-slider-wrap > input:checked + div + label + label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+}
+.materials-slider-wrap > input:checked + div + label:after,
+.materials-slider-wrap > input:checked + div + label + label:after {
+  color: #fff;
+  display: block;
+}
+
+.materials-slider-wrap > div {
+  position: absolute;
+}
+
+.materials-slider-wrap > div {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.materials-slider-wrap > input:checked + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
