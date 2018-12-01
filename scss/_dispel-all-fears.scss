@@ -49,26 +49,15 @@
       color: #313131;
       justify-content: space-between;
       text-align: left;
-      .girl-builder {
-        z-index: 1;
-        position: absolute;
-        left: 33%;
-        width: 100%;
-        height: 100%;
-        img {
-          max-width: 100%;
-          height: 100%;
-        }
-      }
       .what-problem {
         z-index: 0;
         border: 2px solid #e8e8e8;
-        margin-right: 15%;
-        flex: 47%;
+        margin-right: 100px;
+        flex: 53%;
         h3 {
           font-size: 1.6em;
           padding: 10px;
-          margin-bottom: 30px;
+          margin-bottom: 25px;
         }
         .problems {
           display: flex;
@@ -77,8 +66,8 @@
           padding: 0 5px;
           .cancel-symbol-image {
             flex: 0 0 auto;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
             width: 14px;
             img {
               max-width: 100%;
@@ -86,7 +75,189 @@
             }
           }
           #problems-text1 {
+            margin-bottom: 60px;
+          }
+          #problems-text2 {
             margin-bottom: 40px;
+          }
+          #problems-text3 {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 37.5%;
+        width: 100%;
+        height: 100%;
+        img {
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+      .our-solution {
+        margin-left: auto;
+        z-index: 1;
+        flex: 47%;
+        border: 2px solid #008000;
+        h3 {
+          font-size: 1.6em;
+          padding: 10px;
+          margin-bottom: 25px;
+        }
+        .solution-desktop {
+          display: flex;
+          font-size: 1.4em;
+          margin-bottom: 10px;
+          padding: 0 5px;
+          .checked-symbol-image {
+            flex: 0 0 auto;
+            margin-left: 25px;
+            margin-right: 10px;
+            width: 14px;
+            img {
+              max-width: 100%;
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 682px) {
+    .dispel-all-fears-desktop {
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 38.5%;
+        width: 100%;
+        height: 100%;
+       }
+      .what-problem {
+        .problems {
+          #problems-text1 {
+            margin-bottom: 40px;
+          }
+          #problems-text2 {
+            margin-bottom: 40px;
+          }
+          #problems-text3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 783px) {
+    .dispel-all-fears-desktop {
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 41%;
+        width: 100%;
+        height: 100%;
+      }
+      .what-problem {
+        .problems {
+          #problems-text1 {
+            margin-bottom: 30px;
+          }
+          #problems-text2 {
+            margin-bottom: 40px;
+          }
+          #problems-text3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 794px) {
+    .dispel-all-fears-desktop {
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 42%;
+        width: 100%;
+        height: 100%;
+      }
+      .what-problem {
+        .problems {
+          #problems-text1 {
+            margin-bottom: 30px;
+          }
+          #problems-text2 {
+            margin-bottom: 30px;
+          }
+          #problems-text3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 831px) {
+    .dispel-all-fears-desktop {
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 39%;
+        width: 100%;
+        height: 100%;
+      }
+      .what-problem {
+        flex: 50%;
+        h3 {
+          font-size: 2.1em;
+        }
+        .problems {
+          font-size: 1.6em;
+          #problems-text1 {
+            margin-bottom: 30px;
+          }
+          #problems-text2 {
+            margin-bottom: 50px;
+          }
+          #problems-text3 {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .our-solution {
+        flex: 50%;
+        h3 {
+          font-size: 2.1em;
+        }
+        .solution-desktop {
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 922px) {
+    .dispel-all-fears-desktop {
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
+        z-index: 1;
+        left: 41%;
+        width: 100%;
+        height: 100%;
+      }
+      .what-problem {
+        .problems {
+          .cancel-symbol-image {
+            margin-left: 20px;
+            margin-right: 10px;
+          }
+          #problems-text1 {
+            margin-bottom: 30px;
           }
           #problems-text2 {
             margin-bottom: 30px;
@@ -96,29 +267,41 @@
           }
         }
       }
-      .our-solution {
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .dispel-all-fears-desktop {
+      justify-content: center;
+      max-width: 1024px;
+      margin: 0 auto;
+      .girl-builder {
+        position: absolute;
+        margin-right: auto;
         z-index: 1;
-        flex: 47%;
-        border: 2px solid #008000;
-        h3 {
-          font-size: 1.6em;
-          padding: 10px;
-          margin-bottom: 30px;
-        }
-        .solution-desktop {
-          display: flex;
-          font-size: 1.4em;
-          margin-bottom: 10px;
-          padding: 0 5px;
-          .checked-symbol-image {
-            flex: 0 0 auto;
+        left: 41.4%;
+        width: 100%;
+        height: 100%;
+      }
+      .what-problem {
+        .problems {
+          .cancel-symbol-image {
             margin-left: 10px;
-            margin-right: 10px;
-            width: 14px;
-            img {
-              max-width: 100%;
-              width: 90%;
-            }
+          }
+          #problems-text1 {
+            margin-bottom: 30px;
+          }
+          #problems-text2 {
+            margin-bottom: 30px;
+          }
+          #problems-text3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .our-solution {
+        .solution-desktop {
+          .checked-symbol-image {
+            margin-left: 10px;
           }
         }
       }
