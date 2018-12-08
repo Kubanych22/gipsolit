@@ -1224,10 +1224,13 @@ body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive #first-inclus
 }
 
 @media screen and (min-width: 800px) {
+  body .wrapper .main .all-inclusive-wrap .inclusive-wrap {
+    margin: 0 0 0 1.5%;
+  }
   body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive {
-    width: 25%;
-    max-width: 25%;
-    align-items: flex-start;
+    width: 23%;
+    max-width: 23%;
+    align-items: center;
   }
   body .wrapper .main .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
     margin: 0 10px;
@@ -1531,7 +1534,7 @@ body .wrapper .main .dispel-all-fears .dispel-all-fears-desktop {
 body .wrapper .main .materials {
   background: url(../images/materials-bg.png) 0 0 no-repeat;
   background-size: cover;
-  padding: 20px 20px 35px 20px;
+  padding: 20px 20px 5px 20px;
   text-align: center;
   color: #000;
 }
@@ -1543,8 +1546,13 @@ body .wrapper .main .materials h1 {
 }
 
 body .wrapper .main .materials p {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-bottom: 30px;
+  padding: 0;
+}
+
+body .wrapper .main .materials p a {
+  color: #4aa223;
 }
 
 body .wrapper .main .materials .materials-slider-wrap > input {
@@ -1589,46 +1597,142 @@ body .wrapper .main .materials .materials-slider-wrap > input:checked + div {
 body .wrapper .main .materials .materials-slider-wrap {
   position: relative;
   height: 280px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div .arrow-img {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider {
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div .arrow-img .material-images {
-  width: 165px;
-  height: 165px;
+body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img .material-images {
   margin: 0 45px 0 50px;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div .arrow-img .material-images img {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img .material-images img {
   max-width: 100%;
+  width: 165px;
+  height: 165px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div h2 {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider h2 {
   font-size: 2.2em;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div p {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider p {
   font-size: 1.9em;
   font-weight: 300;
   line-height: 1.4;
+  margin-bottom: 20px;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div p span {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider p span {
   font-weight: bold;
 }
 
-body .wrapper .main .materials .materials-slider-wrap div .sertificate {
+body .wrapper .main .materials .materials-slider-wrap .materials-slider .sertificate {
   color: #45a34c;
   font-size: 1.6em;
+}
+
+body .wrapper .main .materials .materials-buy span {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+  body .wrapper .main .materials {
+    padding-top: 60px;
+  }
+  body .wrapper .main .materials .materials-slider-wrap {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider {
+    margin-bottom: 50px;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img label .arrow {
+    display: none;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img .material-images {
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img .material-images img {
+    max-width: 100%;
+  }
+  body .wrapper .main .materials .materials-slider-wrap > div {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transition: none;
+  }
+  body .wrapper .main .materials .materials-slider-wrap:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  body .wrapper .main .materials .materials-slider-wrap {
+    align-content: flex-start;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider {
+    width: 25%;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider #knauf-text {
+    margin-top: 72px;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img {
+    margin: 0;
+  }
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider .arrow-img .material-images img {
+    width: 165px;
+    height: 165px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 865px) {
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 936px) {
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider #knauf-text {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 957px) {
+  body .wrapper .main .materials .materials-slider-wrap .materials-slider #knauf-text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body .wrapper .main .materials .materials-slider-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 body footer {
@@ -1703,10 +1807,13 @@ body footer {
 }
 
 @media screen and (min-width: 800px) {
+  .all-inclusive-wrap .inclusive-wrap {
+    margin: 0 0 0 1.5%;
+  }
   .all-inclusive-wrap .inclusive-wrap .inclusive {
-    width: 25%;
-    max-width: 25%;
-    align-items: flex-start;
+    width: 23%;
+    max-width: 23%;
+    align-items: center;
   }
   .all-inclusive-wrap .inclusive-wrap .inclusive .inclusive-text {
     margin: 0 10px;

@@ -55,10 +55,11 @@
   }
   @media screen and (min-width: 800px) {
     .inclusive-wrap {
+      margin: 0 0 0 1.5%;
       .inclusive {
-        width: 25%;
-        max-width: 25%;
-        align-items: flex-start;
+        width: 23%;
+        max-width: 23%;
+        align-items: center;
         .inclusive-text {
           margin: 0 10px;
           span {
